@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add Employee</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Mobile Menu Button -->
+    <button id="menuBtn" class="menu-btn">
+        ☰
+    </button>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+
+        <div class="logo">
+            HR PRO
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="index.html">
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="employees.html">
+                    Employees
+                </a>
+            </li>
+
+            <li>
+                <a href="add-employee.html">
+                    Add Employee
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <div class="form-container">
+
+            <h1>
+                Add New Employee
+            </h1>
+
+            <form id="employeeForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Full Name"
+                    required>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Email Address"
+                    required>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Phone Number"
+                    required>
+
+                <select id="department" required>
+
+                    <option value="">
+                        Select Department
+                    </option>
+
+                    <option>
+                        IT
+                    </option>
+
+                    <option>
+                        HR
+                    </option>
+
+                    <option>
+                        Finance
+                    </option>
+
+                    <option>
+                        Marketing
+                    </option>
+
+                    <option>
+                        Operations
+                    </option>
+
+                </select>
+
+                <input
+                    type="text"
+                    id="position"
+                    placeholder="Position"
+                    required>
+
+                <input
+                    type="date"
+                    id="employmentDate"
+                    required>
+
+                <button type="submit">
+
+                    Add Employee
+
+                </button>
+
+            </form>
+
+            <p id="successMessage"></p>
+
+        </div>
+
+        <footer>
+
+            Employee Management Dashboard © 2026
+
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

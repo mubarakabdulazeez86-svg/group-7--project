@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Mobile Menu Button -->
+    <button id="menuBtn" class="menu-btn">
+        ☰
+    </button>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+
+        <div class="logo">
+            HR PRO
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="index.html">
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="employees.html">
+                    Employees
+                </a>
+            </li>
+
+            <li>
+                <a href="add-employee.html">
+                    Add Employee
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Welcome Section -->
+        <div class="welcome">
+
+            <h1>
+                Welcome Back HR Manager 👋
+            </h1>
+
+            <p>
+                Manage employees, departments and workforce activities from one dashboard.
+            </p>
+
+        </div>
+
+        <!-- Dashboard Cards -->
+        <div class="cards">
+
+            <div class="card">
+
+                <h2>👨‍💼</h2>
+
+                <h3>Total Employees</h3>
+
+                <p id="employeeCount">0</p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>✅</h2>
+
+                <h3>Active Employees</h3>
+
+                <p id="activeCount">0</p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>🏖️</h2>
+
+                <h3>On Leave</h3>
+
+                <p>12</p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>🏢</h2>
+
+                <h3>Departments</h3>
+
+                <p>5</p>
+
+            </div>
+
+        </div>
+
+        <!-- Employee Table -->
+        <section>
+
+            <h2>
+                Employee Summary Table
+            </h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+
+                        <th>Name</th>
+
+                        <th>Department</th>
+
+                        <th>Position</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="employeeTable">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <!-- Modal Button -->
+        <button class="btn" id="openModal">
+
+            View Announcement
+
+        </button>
+
+        <!-- Modal -->
+        <div class="modal" id="modal">
+
+            <div class="modal-content">
+
+                <span class="close" id="closeModal">
+
+                    &times;
+
+                </span>
+
+                <h2>
+                    HR NOTICE
+                </h2>
+
+                <p>
+                    All employees should update their records before June 30.
+                </p>
+
+            </div>
+
+        </div>
+
+        <footer>
+
+            Employee Management Dashboard © 2026
+
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
